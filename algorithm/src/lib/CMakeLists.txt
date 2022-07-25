@@ -1,0 +1,3 @@
+add_subdirectory(sort)
+add_subdirectory(divide_and_conquer)
+

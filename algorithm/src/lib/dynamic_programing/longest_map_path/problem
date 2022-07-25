@@ -1,0 +1,6 @@
+Input:
+Map G = (V, E)
+
+Output:
+longest weighted path
+weighted length

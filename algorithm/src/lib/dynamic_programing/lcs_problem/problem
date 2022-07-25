@@ -1,0 +1,4 @@
+input
+x A B C B D A B
+y B D C A B A
+output lcs

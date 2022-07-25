@@ -1,0 +1,13 @@
+x= GATCGGCAT
+y= CAATGTGAATC
+
+copy 1
+replace 3
+swap 4
+insert 2
+delete 2
+teminate 5
+
+output
+edit distance
+edit operation

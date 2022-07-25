@@ -1,0 +1,7 @@
+bitonic tours
+Input:
+(0, 6) (1, 0) (2, 3) (5, 4) (6, 1) (7, 5) (8, 2)
+
+Output:
+path
+length

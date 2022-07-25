@@ -1,0 +1,3 @@
+input matrix col-row pair
+35x35 35x15 15x5 5x10 10x20 20x25
+output optimal-parens

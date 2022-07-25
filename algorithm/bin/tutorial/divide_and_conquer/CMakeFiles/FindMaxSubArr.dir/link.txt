@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/FindMaxSubArr.dir/find_max_subarr.cxx.o -o FindMaxSubArr 
