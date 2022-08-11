@@ -17,7 +17,7 @@ int main(int, char **)
 
 	sockaddr_in addr;
 	addr.sin_family = AF_INET;
-	addr.sin_port = htons(18834);
+	addr.sin_port = htons(19931);
 	addr.sin_addr = adi;
 
 	// connect

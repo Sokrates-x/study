@@ -1,0 +1,11 @@
+Script started on 2022-08-07 23:11:37+08:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="80" LINES="26"]
+]0;root@localhost:~/github/study/bash/replay[?2004h[root@localhost replay]# echo hello
+[?2004lhello
+]0;root@localhost:~/github/study/bash/replay[?2004h[root@localhost replay]# echo world
+[?2004lworld
+]0;root@localhost:~/github/study/bash/replay[?2004h[root@localhost replay]# echo w[Khello word[Kld
+[?2004lhello world
+]0;root@localhost:~/github/study/bash/replay[?2004h[root@localhost replay]# exit
+[?2004lexit
+
+Script done on 2022-08-07 23:11:56+08:00 [COMMAND_EXIT_CODE="0"]
