@@ -28,7 +28,7 @@ int main(int, char **)
 	Eigen::Vector<int, 4> mv;
 	mv << 1, 3, 5, 7;
 
-	std::cout << mv[3] << std::endl;
+	//std::cout << mv[3] << std::endl;
 
 	// alloc on the heap
 	Eigen::MatrixXf big_m(100, 100);
@@ -45,7 +45,12 @@ int main(int, char **)
 	// convenience type
 	Eigen::Matrix3Xi m_3x2(3, 2); // seems not very convenient
 
-	std::cout << m_3x2.size() << std::endl;
+	// Arrays
+	Eigen::ArrayXi arr_a(3);
+	Eigen::ArrayXXi arr_b(2, 2);
+	arr_b << 1, 2, 3, 4;
+		
+	std::cout << arr_b << std::endl;
 
 	return 0;
 }

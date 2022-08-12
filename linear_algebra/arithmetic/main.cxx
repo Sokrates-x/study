@@ -75,14 +75,45 @@ int main(int, char **)
 	matrix.minCoeff();
 	matrix.maxCoeff();
 	matrix.trace();
-	assert(res == matrix.diagonal().sum());
+	assert(matrix.trace() == matrix.diagonal().sum());
 
+
+	// Arrays
+	Eigen::ArrayXi arr_a(3);
+	arr_a << 1, 2, 3;
+
+	// Arrays subtraction by scalar
+	arr_a.square() - 1;
+
+	// Arrays multiplication : coefficient-wise multiplication
+	arr_a * arr_a;
+
+	// Abs
+	arr_a.abs();
+	// sqrt
+	arr_a.sqrt();
+
+	// min max & i do NOT know how to use it
+	Eigen::ArrayXXi arr_b(2, 2);
+	arr_b << 1, 2, 3, 4;
+	arr_b.min(arr_b);
+	arr_b.max(arr_b);
+
+	// convert between arrys & matrix
+	Eigen::MatrixXi mat_arr(2, 3);
+	auto arr_mat = mat_arr.array(); 
+	mat_arr = arr_mat.matrix();
+	// do NOT do anything like this: mat_arr + arr_mat
+	// but this is okay: mat_arr = arr_mat arr_mat = mat_arr
 	
-	
+	// cwise product for Matrix
+	Eigen::MatrixXi mat_c(2, 2);
+	mat_c << 1, 2, 3, 4;
+	Eigen::MatrixXi mat_d(2, 2);
+	mat_d << 1, 2, 3, 4;
+
+	//
+	auto res = mat_c.cwiseProduct(mat_d);
 	std::cout << res << std::endl;
-
-
-
-
 	return 0;
 }
