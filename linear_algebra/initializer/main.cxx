@@ -53,10 +53,14 @@ int main(int, char **)
 	magic.block(2, 2, 5, 5).row(4).setOnes();
 	magic(4, 4) = 1;
 
-	auto res = Eigen::MatrixXi::Constant(3, 3, 1);	
+	Eigen::MatrixXi::Constant(3, 3, 1);	
+	
+	// comma Intialise finished
+	Eigen::Vector3i vec;
+	auto res = (vec << 1, 2, 3).finished();
 
 	//
-	std::cout << magic << std::endl;
+	std::cout << res << std::endl;
 
 	return 0;
 }
