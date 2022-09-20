@@ -38,9 +38,9 @@ find . -name "*.sh" -print | (while read arg; do echo $arg; done)
 find . -name "*.sh" -print | xargs -I {} echo {}
 
 # ()
-ls >> log | (cd ..; ls >> log) | ls >> log
+#ls >> log | (cd ..; ls >> log) | ls >> log
 
-cat log
+#cat log
 
 echo "################################################################################"
 # ! means not
